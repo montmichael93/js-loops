@@ -5,6 +5,18 @@
 
 export function getAverage(array) {
   // Your code goes here...
+  var sum = 0;
+  for (var i = 0; i < array[i]; i++) {
+        sum += array[i]
+  }
+
+     var total = 0;
+  for (var x in array) {
+        total++;
+}
+
+
+  return sum / total;
 
 }
 

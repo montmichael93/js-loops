@@ -5,6 +5,13 @@
 
 export function getClientWithLeastBalance(array) {
   // Your code goes here...
+  for (var i = 0; i < array.length; i++) {
+    var minAccountBalance = [array[i]]
+      if ( array[i] < minAccountBalance ) {
+       minAccountBalance = array[i]
+      }
+  }
+ return minAccountBalance
 
 }
 

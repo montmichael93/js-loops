@@ -1,4 +1,3 @@
-
 // EXERCISE 1
 // Return an array of numbers in 1..10
 // getFirstTenNumbers() => [1, 2, 3, ... , 10]
@@ -6,7 +5,19 @@
 export function getFirstTenNumbers() {
   // Your code goes here...
 
+  var array = [];
+  for (var i = 1; i <= 10; i++) {
+    array.push(i);
+  }
+  return array;
 }
+
+
+
+var numbers = getFirstTenNumbers([])
+
+console.log(numbers)
+
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-1"

@@ -7,6 +7,29 @@
 
 export function separateNamesWithAFromRest(array) {
   // Your code goes here...
+  let separate = [];
+  let negResult = [];
+  let posResult = [];
+  let results = [];
+  let letter = /a/;
+
+  for (let i=0; i < array.length; i++) {
+    if (letter.test(array[i])) {
+      posResult.push(array[i])
+    } else {
+      negResult.push(array[i])
+    }
+
+
+     separate = [posResult, negResult]
+
+     for (let i=0; i < separate.length; i++) {
+        results = separate
+     }
+
+
+  }
+  return results
 
 }
 

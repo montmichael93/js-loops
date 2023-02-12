@@ -1,3 +1,4 @@
+// [O
 // EXERCISE 4
 // Return the MIN and the MAX value in the given array of numbers
 // findMinValueInArray([2, 45, 32, 3, 0, 46, 12]) => 0
@@ -5,10 +6,16 @@
 
 export function findMinValueInArray(array) {
   // Your code goes here...
+  for (var i = 0; i < array[i]; i++) {
+    return Math.min(...array)
+  }
 }
 
 export function findMaxValueInArray(array) {
   // Your code goes here...
+for (var i = 0; i < array[i]; i++) {
+  return Math.max(...array)
+}
 }
 
 // === TEST YOURSELF ===
