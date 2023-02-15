@@ -9,17 +9,15 @@ export function flatArrays(array) {
   // Your code goes here...
   let flat = [];
   for (let i=0; i < array.length; i++) {
-
-if (!array[i].length) {
- flat.push(array[i])
-}
- else {
-
-  for (let int of  array[i])
+    if (!array[i].length) {
+      flat.push(array[i])
+  }
+  else { 
+    for (let int of  array[i])
     flat.push(int)
- }
+   }
 
-}
+ }
  return flat
 
 }

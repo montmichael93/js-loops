@@ -6,15 +6,14 @@
 
 export function concatArrays(arr1, arr2) {
   // Your code goes here...
-let sum = [];
-
+  let sum = [];
   for (let letter of arr1){
-    sum.push(letter)
+    sum.push(letter);
   }
   for (let letter of arr2) {
-    sum.push(letter)
+    sum.push(letter);
   }
-    return  sum
+ return sum
 
 }
 

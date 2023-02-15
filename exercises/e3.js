@@ -9,14 +9,7 @@ export function getAverage(array) {
   for (var i = 0; i < array[i]; i++) {
         sum += array[i]
   }
-
-     var total = 0;
-  for (var x in array) {
-        total++;
-}
-
-
-  return sum / total;
+  return sum / array.length;
 
 }
 

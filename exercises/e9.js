@@ -8,10 +8,10 @@ export function getClientsWithBalanceOverOneHundred(array) {
   // Your code goes here...
   var clients = [];
   for (var i = 0; i < array[i].balance; i++) {
-        if (array[i].balance > 100) {
-          clients.push(array[i])
-        }
+   if (array[i].balance > 100) {
+    clients.push(array[i])
    }
+  }
   return clients;
 }
 

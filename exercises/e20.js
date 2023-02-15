@@ -7,29 +7,24 @@
 
 export function separateNamesWithAFromRest(array) {
   // Your code goes here...
-  let separate = [];
-  let negResult = [];
-  let posResult = [];
-  let results = [];
-  let letter = /a/;
-
-  for (let i=0; i < array.length; i++) {
-    if (letter.test(array[i])) {
-      posResult.push(array[i])
-    } else {
-      negResult.push(array[i])
+  const res = [[],[]];
+  
+  
+  for (var names of array) {
+    let hasA = false;
+    for (var char of names) {
+       if (char === 'A' || char === 'a') {
+         hasA = true;
+       } 
     }
-
-
-     separate = [posResult, negResult]
-
-     for (let i=0; i < separate.length; i++) {
-        results = separate
-     }
-
-
+    if (hasA) {
+      res[0].push(names)
+    } else {
+      res[1].push(names)
+    }
   }
-  return results
+  
+  return res
 
 }
 

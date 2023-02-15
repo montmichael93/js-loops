@@ -12,7 +12,8 @@ export function getAllAccountsWithSumsOfDepositsLess2000(array) {
         let sum = 0;
         for (let deposit of account.deposits) {
           sum += deposit;
-        } if (sum < 2000) {
+        } 
+        if (sum < 2000) {
         total.push(account)
         }
      }

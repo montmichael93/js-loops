@@ -6,18 +6,20 @@
 export function getClientsWithLetterInName(array, letter) {
   // Your code goes here...
   var clientsLetter = [];
-  var clientsLetter = [];
-  var character = letter.toUpperCase()
-
- for (var char of array) {
-if(char.name.includes(letter) || char.name.includes(character)) {
- clientsLetter.push(char.name)
-
-
-}
- }
-return clientsLetter
-
+  var char = letter.toUpperCase()
+  for (var customer of array) {
+    let hasLetter = false;
+    for (var names of customer.name) {
+     
+       if (names === letter || names === char) {
+         hasLetter = true;
+       } 
+    }
+    if (hasLetter) {
+      clientsLetter.push(customer.name)
+    } 
+  }
+  return clientsLetter
 }
 
 // === TEST YOURSELF ===
